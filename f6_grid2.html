@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Lakshita Soni">
+    <title>f6_grid2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            min-height: 100dvh;
+            font-family:"Roboto", sans-serif;
+            font-size:16px;
+            background-color: white;
+        }
+    
+        .box{
+            background-color: navy;
+            color:white;
+            padding:1rem;
+        }
+        .gc{ /* grid container*/
+            display:grid;
+            gap:0.5rem;
+            /* Spciy width of column */
+            grid-template-columns: 150px 250px;
+            /* specify height of row */
+            grid-template-rows: repeat(3,150px);
+            /* center whole grid */
+            place-content: center;
+        }
+        @media(min-width:767px){
+            .gc{ 
+            grid-template-columns: 200px 200px 200px;
+            /* specify height of row */
+            grid-template-rows: 200px 200px;
+            /* center whole grid */
+            place-content: center;
+        }
+        }
+        @media(min-width:1024px){
+            .gc{ 
+            grid-template-columns: repeat(4,250px);
+            grid-template-rows: repeat(2,250px);
+            place-content: center;
+        }
+        #m6{
+            grid-column:2/-1;
+        }
+    }
+    </style>
+        
+
+</head>
+<body>
+    <section class="box" style="height:10vh">
+        <span style="font-size:2.5rem;margin-right:1rem">&#9812</span> Header/Navbar</section>
+    <section class="box gc" style="height:80vh;background-color:white">
+         <main class="box" id="m1"> Content-1</main>
+         <main class="box" id="m2"> Content-2</main>
+         <main class="box" id="m3"> Content-3</main>
+         <main class="box" id="m4"> Content-4</main>
+         <main class="box" id="m5"> Content-5</main>
+         <main class="box" id="m6"> Content-6</main>
+         </section>
+         <section
+         class="box"
+         style="position: absolute; bottom:0;left:0; height:10vh; width:100%">
+         <span style="font-size:1.5rem;margin-right:1rem">&#9776</span> Footer
+        </section>
+    <script></script>
+</body>
+</html>
