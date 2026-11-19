@@ -1,0 +1,17 @@
+1.React — JavaScript Library:
+React is a JavaScript library used to build interactive user interfaces, especially single-page applications. 
+It divides the UI into reusable components that manage changing data through state. 
+React provides hooks like useState and useEffect to manage component behavior. 
+When state changes, React efficiently updates the UI without reloading the page.
+
+
+2.State — Changing Data in React
+State is used in React to store values that can change over time. 
+We can manage state using the useState hook. When state changes through its setter function, React re-renders the component to reflect updated information in the UI. 
+For example, state can store a counter value that increases when a button is clicked.
+
+
+3.Zustand — Global State Management
+Zustand is a state management library for React. 
+Normally, components share data using props or Context, but passing props through multiple components can cause prop drilling. 
+Zustand solves this problem by creating a shared store where multiple components can access and update the same state without passing props through every component.
